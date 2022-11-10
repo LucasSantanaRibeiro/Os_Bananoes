@@ -1,0 +1,93 @@
+.cabecalho {
+    height: 15vh;
+    background-color: rgba(255, 255, 0, 0.932);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Nanum Pen Script', cursive;
+
+}
+
+H1 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-left: 3vw;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 18vh;
+
+}
+
+.ulCabecalho {
+
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+}
+
+
+li {
+    padding: 5px;
+    transition: transform 1s;
+}
+
+li:hover {
+    color: orange;
+    transform: translateX(1px) scale(1.2);
+    text-decoration: underline;
+}
+
+.borda {
+    font-family: 'Nanum Pen Script', cursive;
+
+    text-align: center;
+    height: 30vh;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 1vw;
+    padding-left: 3.5vh;
+    padding-bottom: 3vw;
+    padding-right: 3.5vh;
+    transition: transform 1s;
+}
+
+main {
+    background-image: url('imagens/WhatsApp\ Image\ 2022-11-10\ at\ 17.52.55.jpeg');
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 100%
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+}
+
+.rodape {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoBranco {
+    height: 80px;
+    position: absolute;
+}
+
+p {
+    color: white;
+    margin-top: 15vh;
+    font-size: smaller;
+}
