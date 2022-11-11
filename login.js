@@ -1,5 +1,4 @@
 async function login() {
-    debugger
     const corpo = {
         email: document.getElementById("email").value,
         senha: document.getElementById("senha").value
@@ -16,5 +15,14 @@ async function login() {
     const resultadoApi = await fetch("https://codifica-demo-api.herokuapp.com/api/v1/users/login", requisicao)
     const resultadoJson = await resultadoApi.json();
 
-    alert(resultadoJson.mensagem)
+    if (resultadoJson.mensagem == "Login feito com sucesso") {
+        localStorage.setItem("acesso", true)
+        localStorage.setItem("usuario", JSON.stringify(corpo.email))
+
+        /*         window.location.href = "loja.html" */
+    }
+    else {
+        localStorage.setItem("acesso", false)
+        localStorage.setItem("usuario", "")
+    }
 }
