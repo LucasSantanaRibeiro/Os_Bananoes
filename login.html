@@ -6,15 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
+    <link rel="stylesheet" href="Estilos/reset.css">
+    <link rel="stylesheet" href="Estilos/padrao.css">
+    <link rel="stylesheet" href="Estilos/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <script src="login.js"></script>
+    <div class="cabecalho">
 
-        <input type="email" id="email">
-        <input type="password" id="senha">
-        <input type="button" value="logar" onclick="login()">
+        <div class="logo">
+            <img src="imagens/download-removebg-preview-removebg-preview.png" class="logo" alt="Imagem não encontrada">
+        </div>
+        <H1>OS BANANÕES</H1>
+    </div>
+    <main>
+        <div class="caixaDeLogin">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha">
+            <input type="button" class="botao" value="logar" onclick="login()">
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <img src="imagens/WhatsApp_Image_2022-11-10_at_17.58.30-removebg-preview.png" class="logoBranco" alt="">
 
+            <p>@Copyright os Bananões - 2022</p>
+        </div>
 </body>
 
 </html>

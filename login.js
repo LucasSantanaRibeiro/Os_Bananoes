@@ -1,4 +1,5 @@
 async function login() {
+    debugger
     const corpo = {
         email: document.getElementById("email").value,
         senha: document.getElementById("senha").value
@@ -22,6 +23,7 @@ async function login() {
         /*         window.location.href = "loja.html" */
     }
     else {
+        alert(resultadoJson.mensagem)
         localStorage.setItem("acesso", false)
         localStorage.setItem("usuario", "")
     }
