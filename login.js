@@ -20,7 +20,7 @@ async function login() {
         localStorage.setItem("acesso", true)
         localStorage.setItem("usuario", JSON.stringify(corpo.email))
 
-        /*         window.location.href = "loja.html" */
+        window.location.href = "loja.html"
     }
     else {
         alert(resultadoJson.mensagem)
