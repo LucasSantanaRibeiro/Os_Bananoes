@@ -8,10 +8,18 @@
     height: 15vh;
     background-color: rgba(255, 255, 0, 0.932);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-family: 'Nanum Pen Script', cursive;
 
+}
+
+.logo {
+    padding-left: 18vw;
+}
+
+h1 {
+    padding-right: 31vw;
 }
 
 main {
@@ -24,15 +32,22 @@ main {
 
 .botao {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
+    height: 7vh;
+    width: 5vw;
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: bold;
+    font-size: 5vh;
 }
 
 label {
     display: block;
     margin-top: 5px;
+    font-family: 'Nanum Pen Script', cursive;
     font-weight: bold;
+    font-size: 5vh;
 }
 
 footer {
@@ -62,4 +77,5 @@ input {
     margin-bottom: 10vh;
     margin-top: 2vh;
     border-radius: 1vh;
+    height: 5vh;
 }
