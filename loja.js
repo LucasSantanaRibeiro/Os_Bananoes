@@ -7,11 +7,20 @@ async function CarregarTela() {
 
     var resultado = document.getElementById("main")
 
+
     for (const produto of BodyJson) {
-        const img = document.createElement("img")
-        img.src = produto.img
-        resultado.append(img)
-        img.classList.add("borda")
+        const conteudo = `<div class="produtos">
+        <img src="${produto.img}" class="teste">
+        <ul>
+            <li class="nomeEpreco">${produto.nome}
+            preço:${produto.preco}
+            </li>
+        </ul>
+        <input type="button" value="" onclick="adicionar()" class="carrinho">
+    </div>`
+
+        document.querySelector("#main").innerHTML += conteudo
+
     }
 
     /* for (const nomeProduto of BodyJson) {
@@ -22,10 +31,5 @@ async function CarregarTela() {
     } */
 
 }
-
-function carregarlivros(){
-   
-}
-
 
 

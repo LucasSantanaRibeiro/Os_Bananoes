@@ -16,7 +16,7 @@
 </head>
 
 
-<body onload="CarregarTela()">
+<body id="body" onload="CarregarTela()">
 
     <header>
         <div class="cabecalho">
@@ -29,10 +29,10 @@
             <nav>
                 <ul>
                     <div class="ulCabecalho">
-                        <li><a onclick="carregarlivros()">LIVROS</a></li>
-                        <li>FILMES</li>
-                        <li>CAMISETAS</li>
-                        <li><a href="login.html">LOGIN</a></li>
+                        <li class="categorias"><a onclick="carregarlivros()">LIVROS</a></li>
+                        <li class="categorias">FILMES</li>
+                        <li class="categorias">CAMISETAS</li>
+                        <li class="categorias"><a href="login.html">LOGIN</a></li>
                     </div>
                 </ul>
             </nav>
@@ -40,6 +40,16 @@
     </header>
 
     <main id="main">
+
+        <!-- <div class="produtos">
+            <img src="${produto.img}" class="teste">
+            <ul>
+                <li>${produto.nome}
+                <li>
+                <li>${produto.preco}</li>
+            </ul>
+            <input type="button" value="" onclick="adicionar()" class="carrinho">
+        </div> -->
 
     </main>
 

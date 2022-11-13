@@ -1,9 +1,15 @@
+var usuariosSalvos = localStorage.getItem(`usuarios`)
+var usuarios = JSON.parse(usuariosSalvos)
+
+
 async function login() {
-    debugger
+
     const corpo = {
         email: document.getElementById("email").value,
         senha: document.getElementById("senha").value
     }
+
+    var email = corpo.email
 
     const requisicao = {
         method: 'POST',
@@ -17,14 +23,20 @@ async function login() {
     const resultadoJson = await resultadoApi.json();
 
     if (resultadoJson.mensagem == "Login feito com sucesso") {
-        localStorage.setItem("acesso", true)
-        localStorage.setItem("usuario", JSON.stringify(corpo.email))
 
-        window.location.href = "loja.html"
+        usuarios.push(email)
+
+        localStorage.setItem("acesso", true)
+
+        var usuariosJSON = JSON.stringify(usuarios)
+
+        localStorage.setItem(`usuarios`, usuariosJSON)
+
+        /* window.location.href = "loja.html" */
+
     }
     else {
         alert(resultadoJson.mensagem)
         localStorage.setItem("acesso", false)
-        localStorage.setItem("usuario", "")
     }
 }
