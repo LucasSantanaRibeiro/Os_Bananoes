@@ -31,5 +31,13 @@ async function CarregarTela() {
     } */
 
 }
+async function adicionar() {
+    var id = await fetch`https://codifica-demo-api.herokuapp.com/api/v2/diariodeumbanana/products/` + id
+    var idJson = await id.json()
+
+    localStorage.setItem()
+
+}
+
 
 
