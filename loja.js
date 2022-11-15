@@ -12,11 +12,13 @@ async function CarregarTela() {
         const conteudo = `<div class="produtos">
         <img src="${produto.img}" class="teste">
         <ul>
-            <li class="nomeEpreco">${produto.nome}
-            preço:${produto.preco}
+            <li class="nome">${produto.nome}
+            </li>
+
+            <li class="preco">R$${produto.preco}
             </li>
         </ul>
-        <input type="button" value="" onclick="adicionar()" class="carrinho">
+        <input type="button" value="add ao Carrinho" onclick="adicionar()" class="carrinho">
     </div>`
 
         document.querySelector("#main").innerHTML += conteudo
@@ -30,6 +32,21 @@ async function CarregarTela() {
         console.log(nomeProduto.nome)
     } */
 
+}
+
+async function adicionar() {
+    var inicio = {
+        body:Json.stringfy(eita)
+    }
+    var id = await fetch`https://codifica-demo-api.herokuapp.com/api/v2/diariodeumbanana/products`,eita
+var idjson = await id.json();
+
+   
+    var email2 = localStorage.getItem('email')
+    localStorage.setItem("email2", final)
+    
+
+    
 }
 
 

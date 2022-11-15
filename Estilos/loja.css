@@ -93,28 +93,58 @@ p {
 }
 
 .produtos {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 5px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+    height: 40vh;
+    width: 13vw;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3%;
+    transition: transform 1s;
+    padding: 3vh;
+}
+
+.produtos:hover {
+    transform: translateX(1px) scale(1.2);
+
+}
+
+.nome {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
-    width: 15vw;
-    background-color: white;
-    border: 5px solid red
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.preco {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 5vh;
+    transition: transform 1s;
+}
+
+.preco:hover {
+    color: green;
+    transform: translateX(1px) scale(1.2);
 }
 
 .teste {
     display: block;
     height: 20vh;
+    border: 0px;
+    border-radius: 3%;
 }
 
 .carrinho {
     width: 10vh;
     display: block;
-}
+    background: url(bece203ed79990c886f026b17dfd4099-removebg-preview.png) no-repeat;
 
-.nomeEpreco {
-    display: block;
-    font-weight: bolder;
-    font-size: small;
 }

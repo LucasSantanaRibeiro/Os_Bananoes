@@ -1,9 +1,4 @@
-var usuariosSalvos = localStorage.getItem(`usuarios`)
-var usuarios = JSON.parse(usuariosSalvos)
-
-
 async function login() {
-
     const corpo = {
         email: document.getElementById("email").value,
         senha: document.getElementById("senha").value
@@ -24,15 +19,11 @@ async function login() {
 
     if (resultadoJson.mensagem == "Login feito com sucesso") {
 
-        usuarios.push(email)
-
         localStorage.setItem("acesso", true)
 
-        var usuariosJSON = JSON.stringify(usuarios)
+        localStorage.setItem(`usuario`, email)
 
-        localStorage.setItem(`usuarios`, usuariosJSON)
-
-        /* window.location.href = "loja.html" */
+        window.location.href = "loja.html"
 
     }
     else {
