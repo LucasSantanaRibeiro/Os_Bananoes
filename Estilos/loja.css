@@ -143,8 +143,16 @@ p {
 }
 
 .carrinho {
-    width: 10vh;
+    background-color: lightblue;
+    border: 0px;
+    border-radius: 5%;
+    width: 20vh;
     display: block;
-    background: url(bece203ed79990c886f026b17dfd4099-removebg-preview.png) no-repeat;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 3vh;
+}
 
+#mainCarrinho {
+    font-style: italic;
+    text-align: center;
 }

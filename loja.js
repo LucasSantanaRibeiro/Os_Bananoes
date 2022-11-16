@@ -21,7 +21,7 @@ async function CarregarTela() {
                     <li class="preco" id="precoProduto${contador}">R$${produto.preco}
                     </li>
                 </ul>
-                <input type="button" onclick="adicionar${contador}()" value="add ao Carrinho" id=" class="carrinho">
+                <input type="button" onclick="adicionar${contador}()" value="add ao carrinho" id="" class="carrinho">
             </div>`
 
         document.querySelector("#main").innerHTML += conteudo
@@ -39,7 +39,10 @@ async function CarregarTela() {
 </div>`
 
 const carrinhoDeCompras = document.getElementById("carrinhoDeCompras") */
-carrinhosalvo = localStorage.getItem("Carrinho")
+
+usuario = localStorage.getItem("usuario")
+usuarioJSON = JSON.stringify(usuario)
+carrinhosalvo = localStorage.getItem(usuario)
 var carrinhosalvoJSON = JSON.parse(carrinhosalvo)
 if (carrinhosalvoJSON == null) {
 
@@ -55,12 +58,13 @@ function adicionar0() {
 
     var nome = produto.nome
     var preco = produto.preco
+    var imagem = produto.img
 
     var arrayproduto = [nome, preco]
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar1() {
@@ -73,9 +77,7 @@ function adicionar1() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
-    carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar2() {
@@ -88,9 +90,7 @@ function adicionar2() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
-    carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar3() {
@@ -103,9 +103,7 @@ function adicionar3() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
-    carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar4() {
@@ -118,7 +116,7 @@ function adicionar4() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar5() {
@@ -131,7 +129,7 @@ function adicionar5() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar6() {
@@ -144,7 +142,7 @@ function adicionar6() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar7() {
@@ -157,7 +155,7 @@ function adicionar7() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar8() {
@@ -170,7 +168,7 @@ function adicionar8() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar9() {
@@ -183,7 +181,7 @@ function adicionar9() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar10() {
@@ -196,7 +194,7 @@ function adicionar10() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar11() {
@@ -209,7 +207,7 @@ function adicionar11() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar12() {
@@ -222,7 +220,7 @@ function adicionar12() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar13() {
@@ -235,7 +233,7 @@ function adicionar13() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar14() {
@@ -248,7 +246,7 @@ function adicionar14() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar15() {
@@ -261,7 +259,7 @@ function adicionar15() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar16() {
@@ -274,7 +272,7 @@ function adicionar16() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar17() {
@@ -287,7 +285,7 @@ function adicionar17() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar18() {
@@ -300,7 +298,7 @@ function adicionar18() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar19() {
@@ -313,7 +311,7 @@ function adicionar19() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar20() {
@@ -326,7 +324,7 @@ function adicionar20() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar21() {
@@ -339,7 +337,7 @@ function adicionar21() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar22() {
@@ -352,7 +350,7 @@ function adicionar22() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar23() {
@@ -365,7 +363,7 @@ function adicionar23() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar24() {
@@ -378,7 +376,7 @@ function adicionar24() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar25() {
@@ -391,7 +389,7 @@ function adicionar25() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar26() {
@@ -404,7 +402,7 @@ function adicionar26() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
 }
 
 function adicionar27() {
@@ -417,6 +415,14 @@ function adicionar27() {
 
     carrinho.push(arrayproduto)
     carrinhoJSON = JSON.stringify(carrinho)
-    localStorage.setItem("Carrinho", carrinhoJSON)
+    localStorage.setItem(usuario, carrinhoJSON)
+}
+
+function paginaCarrinho() {
+    var carrinho1 = localStorage.getItem(usuario)
+    var carrinhoValores = JSON.parse(carrinho1)
+    var resultado = document.getElementById("mainCarrinho")
+    resultado.append(carrinhoValores)
+    console.log(carrinhoValores)
 }
 

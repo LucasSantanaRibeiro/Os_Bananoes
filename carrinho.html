@@ -5,24 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/reset.css">
+    <link rel="stylesheet" href="Estilos/loja.css">
+    <link rel="stylesheet" href="padrao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Carrinho de Compras</title>
 </head>
 
-<body>
+<body onload="paginaCarrinho()">
+    <header>
+        <div class="cabecalho">
+
+            <div class="logo">
+                <img src="imagens/download-removebg-preview-removebg-preview.png" class="logo"
+                    alt="Imagem não encontrada">
+            </div>
+            <H1>OS BANANÕES</H1>
+            <nav>
+                <ul>
+                    <div class="ulCabecalho">
+                        <li class="categorias">LIVROS</li>
+                        <li class="categorias">FILMES</li>
+                        <li class="categorias">CAMISETAS</li>
+                        <li class="categorias"><a href="login.html">LOGIN</a></li>
+
+                    </div>
+                </ul>
+            </nav>
+    </header>
     <script src="loja.js"></script>
 
-    <main id="carrinhoDeCompras"></main>
+    <main id="mainCarrinho">
 
-    <input type="button" value="" onclick="paginaCarrinho()">
+    </main>
 
-    <!-- <div class="carrinhoCSS">
-        <img src="${produto.img}" class="imagemProdutos">
-        <ul>
-            <li class="nome">${produto.nome}</li>
-            <li class="preco">${produto.preco}</li>
-        </ul>
-    </div> -->
 
+    <footer>
+        <div class="rodape">
+            <img src="imagens/WhatsApp_Image_2022-11-10_at_17.58.30-removebg-preview.png" class="logoBranco" alt="">
+
+            <p>@Copyright os Bananões - 2022</p>
+        </div>
+    </footer>
 </body>
 
 </html>
