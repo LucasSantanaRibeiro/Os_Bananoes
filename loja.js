@@ -46,13 +46,7 @@ if (carrinhosalvoJSON == null) {
 function adicionar(numero) {
     const produto = BodyJson[numero]
 
-    var nome = produto.nome
-    var preco = produto.preco
-    var imagem = produto.img
-
-    var arrayproduto = [nome, preco, imagem]
-
-    carrinho.push(arrayproduto)
+    carrinho.push(produto)
     carrinhoJSON = JSON.stringify(carrinho)
     localStorage.setItem(usuario, carrinhoJSON)
 }
@@ -64,3 +58,4 @@ function paginaCarrinho() {
     var resultado = document.getElementById("mainCarrinho")
     resultado.append(carrinhoValores)
 }
+
