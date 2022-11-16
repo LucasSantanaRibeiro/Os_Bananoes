@@ -420,12 +420,3 @@ function adicionar27() {
     localStorage.setItem("Carrinho", carrinhoJSON)
 }
 
-
-function paginaCarrinho() {
-    jsonteste = JSON.parse(carrinhosalvo)
-    var varteste = jsonteste[3]
-    resultado = document.getElementById("carrinhoDeCompras")
-    resultado.append(varteste)
-    console.log(varteste)
-}
-
