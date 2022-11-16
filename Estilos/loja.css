@@ -64,12 +64,6 @@ H1 {
     transition: transform 1s;
 }
 
-#mainCarrinho {
-    display: flex;
-    justify-content: center;
-    font-style: italic;
-    height: 90vh;
-}
 
 main {
     background-image: url('');

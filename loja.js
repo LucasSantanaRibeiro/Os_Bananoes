@@ -7,7 +7,6 @@ async function CarregarTela() {
 
     var contador = -1
 
-    var resultado = document.getElementById("main")
     for (const produto of BodyJson) {
         if (contador < 28) {
             contador++
@@ -55,7 +54,16 @@ function adicionar(numero) {
 function paginaCarrinho() {
     var carrinho1 = localStorage.getItem(usuario)
     var carrinhoValores = JSON.parse(carrinho1)
-    var resultado = document.getElementById("mainCarrinho")
-    resultado.append(carrinhoValores)
-}
 
+    for (produto of carrinhoValores) {
+        const resultado = `<div class="produtos">
+        <img src="${produto.img}" class="imagemProdutos">
+        <ul>
+            <li class="nome">${produto.nome}</li>
+            <li class="preco">${produto.preco}</li>
+        </ul>
+    </div>
+    `
+        document.querySelector("#mainCarrinho").innerHTML += resultado
+    }
+}
