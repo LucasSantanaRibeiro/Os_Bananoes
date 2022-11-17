@@ -49,6 +49,9 @@ function adicionar(numero) {
     carrinhoJSON = JSON.stringify(carrinho)
     localStorage.setItem(usuario, carrinhoJSON)
 }
+total = []
+soma = 0
+console.log(total)
 
 
 function paginaCarrinho() {
@@ -65,6 +68,14 @@ function paginaCarrinho() {
     </div>
     `
         document.querySelector("#mainCarrinho").innerHTML += resultado
+        total.push(produto.preco)
+
     }
+
+    for (var contador = 0; contador < total.length; contador++) {
+        soma += total[contador]
+    }
+    valortotal = document.getElementById("precofinal")
+    valortotal.innerHTML = `Preço Final: R$${soma.toFixed(2)}`
 
 }
