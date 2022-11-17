@@ -23,7 +23,7 @@ async function login() {
 
         localStorage.setItem(`usuario`, email)
 
-        window.location.href = "loja.html"
+        window.location.href = "index.html"
 
     }
     else {
