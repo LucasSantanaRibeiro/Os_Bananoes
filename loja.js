@@ -64,6 +64,7 @@ function paginaCarrinho() {
         </ul>
     </div>
     `
+        document.querySelector("#mainCarrinho").innerHTML += resultado
     }
 
 }
